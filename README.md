@@ -1,5 +1,5 @@
 ## WebPageParser
-A delightful  xml and html parsing framework for iOS
+A delightful  xml and html parsing relish for iOS
 
 ####How to use
 For parsing html, we can use:
