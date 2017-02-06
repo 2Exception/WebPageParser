@@ -1,7 +1,7 @@
 ## WebPageParser
 A delightful  xml and html parsing framework for iOS
 
-####how to use
+####How to use
 For parsing html, we can use:
 ```objc
 NSString *webFile = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"xml"];
