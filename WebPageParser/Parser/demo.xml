@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="webpageparser.xsl"?>
+
+<head>
+    <list id="list1" type="ordered"/>
+</head>
+<body>
+    <para>
+        <text>hello</text>
+    </para>
+    
+    <image>
+        <source>http://image1.png</source>
+        <styles>
+            <width>20</width>
+            <float>left</float>
+        </styles>
+    </image>
+    
+    <horizontal-line>
+        <styles>
+            <color>#0aafff</color>
+            <height>50</height>
+            <width>100</width>
+            <align>center</align>
+        </styles>
+    </horizontal-line>
+    
+    <attach>
+        <source>http://image2.png</source>
+        <resource>http://webpageparser.ipa</resource>
+        <filename>webpageparser.ipa</filename>
+    </attach>
+    
+</body>
