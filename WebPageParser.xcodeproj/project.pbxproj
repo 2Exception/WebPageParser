@@ -16,12 +16,13 @@
 		2745829D1E48270A00F26B22 /* WebPageParserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2745829C1E48270A00F26B22 /* WebPageParserTests.m */; };
 		274582B11E48285500F26B22 /* HTMLTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 274582A91E48285500F26B22 /* HTMLTagParser.m */; };
 		274582B21E48285500F26B22 /* TagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 274582AB1E48285500F26B22 /* TagParser.m */; };
-		274582B31E48285500F26B22 /* demo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 274582AC1E48285500F26B22 /* demo.xml */; };
+		274582B31E48285500F26B22 /* xmldemo.xml in Resources */ = {isa = PBXBuildFile; fileRef = 274582AC1E48285500F26B22 /* xmldemo.xml */; };
 		274582B41E48285500F26B22 /* TagModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 274582AE1E48285500F26B22 /* TagModel.m */; };
 		274582B51E48285500F26B22 /* XMLTagParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 274582B01E48285500F26B22 /* XMLTagParser.m */; };
 		274582B91E482A7E00F26B22 /* NSString+WebPageFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 274582B81E482A7E00F26B22 /* NSString+WebPageFormat.m */; };
 		274582BF1E482B0E00F26B22 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 274582BB1E482B0E00F26B22 /* LICENSE.txt */; };
 		274582C11E482B0E00F26B22 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 274582BE1E482B0E00F26B22 /* RegExCategories.m */; };
+		2786F7591E56DA4F0093C30F /* htmldemo.html in Resources */ = {isa = PBXBuildFile; fileRef = 2786F7581E56DA4F0093C30F /* htmldemo.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +53,7 @@
 		274582A91E48285500F26B22 /* HTMLTagParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLTagParser.m; sourceTree = "<group>"; };
 		274582AA1E48285500F26B22 /* TagParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagParser.h; sourceTree = "<group>"; };
 		274582AB1E48285500F26B22 /* TagParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagParser.m; sourceTree = "<group>"; };
-		274582AC1E48285500F26B22 /* demo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = demo.xml; sourceTree = "<group>"; };
+		274582AC1E48285500F26B22 /* xmldemo.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = xmldemo.xml; sourceTree = "<group>"; };
 		274582AD1E48285500F26B22 /* TagModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagModel.h; sourceTree = "<group>"; };
 		274582AE1E48285500F26B22 /* TagModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagModel.m; sourceTree = "<group>"; };
 		274582AF1E48285500F26B22 /* XMLTagParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLTagParser.h; sourceTree = "<group>"; };
@@ -64,6 +65,7 @@
 		274582BC1E482B0E00F26B22 /* readme.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = readme.md; sourceTree = "<group>"; };
 		274582BD1E482B0E00F26B22 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
 		274582BE1E482B0E00F26B22 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
+		2786F7581E56DA4F0093C30F /* htmldemo.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = htmldemo.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +150,8 @@
 				274582A91E48285500F26B22 /* HTMLTagParser.m */,
 				274582AF1E48285500F26B22 /* XMLTagParser.h */,
 				274582B01E48285500F26B22 /* XMLTagParser.m */,
-				274582AC1E48285500F26B22 /* demo.xml */,
+				274582AC1E48285500F26B22 /* xmldemo.xml */,
+				2786F7581E56DA4F0093C30F /* htmldemo.html */,
 				274582B61E482A1800F26B22 /* WebPageParserDelegate.h */,
 			);
 			path = Parser;
@@ -271,7 +274,8 @@
 				2745828F1E48270A00F26B22 /* Assets.xcassets in Resources */,
 				2745828D1E48270A00F26B22 /* Main.storyboard in Resources */,
 				274582BF1E482B0E00F26B22 /* LICENSE.txt in Resources */,
-				274582B31E48285500F26B22 /* demo.xml in Resources */,
+				2786F7591E56DA4F0093C30F /* htmldemo.html in Resources */,
+				274582B31E48285500F26B22 /* xmldemo.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +502,7 @@
 				274582A31E48270A00F26B22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		274582A41E48270A00F26B22 /* Build configuration list for PBXNativeTarget "WebPageParserTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +511,7 @@
 				274582A61E48270A00F26B22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

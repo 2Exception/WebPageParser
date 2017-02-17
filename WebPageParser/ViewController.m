@@ -14,6 +14,7 @@
 @interface ViewController ()
 
 @property(nonatomic,copy)NSString *xmlContent;
+@property(nonatomic,copy)NSString *htmlContent;
 
 @end
 
@@ -22,14 +23,38 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    [self testXmlParser];
+    
+    [self testHtmlParser];
+}
+
+-(void)testXmlParser{
+
     NSArray *tagNames = @[@"head",@"body",@"para",@"text",@"image",@"source",@"styles",@"width",@"float",@"horizontal-line",@"color",@"align",@"attach",@"resource",@"filename"];
     
     [tagNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
-      
+        
         XMLTagParser *parser = [XMLTagParser parserWithWebPageContent:self.xmlContent tagName:obj];
         for (TagModel * tmp in parser.tags) {
             NSLog(@"<%@> value is :%@\n\n",tmp.tagName,tmp.tag);
         }
+    }];
+}
+
+-(void)testHtmlParser{
+
+    NSArray *tagNames = @[@"meta",@"img"];
+    
+    [tagNames enumerateObjectsUsingBlock:^(NSString * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        
+        HTMLTagParser *parser = [HTMLTagParser parserWithWebPageContent:self.htmlContent tagName:obj];
+        
+        
+        [parser.tags enumerateObjectsUsingBlock:^(TagModel *  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            
+            NSLog(@"<%@> value is :%@\n\n",tagNames[idx],obj.tag);
+        }];
+        
     }];
 }
 
@@ -40,13 +65,29 @@
     
     dispatch_once(&onceToken, ^{
         
-        NSString *xmlFile = [[NSBundle mainBundle] pathForResource:@"demo" ofType:@"xml"];
+        NSString *xmlFile = [[NSBundle mainBundle] pathForResource:@"xmldemo" ofType:@"xml"];
         xmlStr = [NSString stringWithContentsOfFile:xmlFile
                                            encoding:(NSUTF8StringEncoding)
                                               error:nil];
     });
 
     return xmlStr;
+}
+
+-(NSString *)htmlContent{
+    
+    static NSString* htmlStr = nil;
+    static dispatch_once_t onceToken;
+    
+    dispatch_once(&onceToken, ^{
+        
+        NSString *htmlFile = [[NSBundle mainBundle] pathForResource:@"htmldemo" ofType:@"html"];
+        htmlStr = [NSString stringWithContentsOfFile:htmlFile
+                                           encoding:(NSUTF8StringEncoding)
+                                              error:nil];
+    });
+    
+    return htmlStr;
 }
 
 @end
