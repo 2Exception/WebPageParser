@@ -1,7 +1,7 @@
 ## WebPageParser
 A delightful  xml and html parsing relish for iOS
 
-####How to use
+### How to use 
 
 For parsing html, we can use the code below:
 ```objc
@@ -11,7 +11,7 @@ NSString *webStr = [NSString stringWithContentsOfFile:webFile
                                               error:nil];
 HTMLTagParser *parser = [HTMLTagParser parserWithWebPageContent:webStr tagName:obj];
 ```
-Or If needing parsing xml, we can use the method:
+Or if needing parsing xml, we can use the method:
 ```objc
 XMLTagParser *parser = [XMLTagParser parserWithWebPageContent:self.xmlContent tagName:obj];
 ```
@@ -19,5 +19,5 @@ In addition, if we could't know the type of webpage is html or xml,we can use
 ```objc
 TagParser *parser = [TagParser parserWithWebPageContent:self.xmlContent tagName:obj];
 ```
-####The Third Dependency 
+### The Third Dependency 
 RegExCategories
